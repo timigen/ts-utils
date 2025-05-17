@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+      "rootDir": "./src",
+      "outDir": "./dist/",
+      "noImplicitAny": false,
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "declaration": true,
+      "target": "ES2022",
+      "removeComments": true,
+      "typeRoots": [
+        "./node_modules/@types",
+        "./custom_definitions"
+    ],
+    "types": [
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/index.ts"
+  ],
+  "exclude": []
+}

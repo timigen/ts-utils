@@ -1,0 +1,28 @@
+{
+  "name": "ts-utils",
+  "type": "module",
+  "version": "0.0.17",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "format": "prettier --write ./src/*.ts",
+    "lint": "tslint --project tsconfig.json",
+    "qc": "npm run format && npm run lint",
+    "build-dev": "tsc",
+    "build": "npm run qc && npm run build-dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nanoid": "^5.1.5",
+    "uuid": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^10.0.0",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.5.4",
+    "tslint": "^5.20.1",
+    "typescript": "^5.8.2"
+  }
+}
